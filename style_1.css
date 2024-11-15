@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;600&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Space Grotesk", sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 850px;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.container:hover {
+    transform: translateY(-5px);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+header h2 {
+    color: #343a40;
+    font-weight: 600;
+}
+
+.logout-button {
+    padding: 10px 18px;
+    background: #dc3545;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.logout-button:hover {
+    background: #c82333;
+    transform: scale(1.05);
+}
+
+.profile, .complaints, .add-complaint {
+    margin-bottom: 25px;
+}
+
+h3 {
+    color: #495057;
+    margin-bottom: 15px;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.profile p, .complaints p {
+    color: #6c757d;
+    font-size: 15px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+table, th, td {
+    border: 1px solid #dee2e6;
+}
+
+table th, table td {
+    padding: 14px;
+    text-align: left;
+    font-size: 14px;
+}
+
+table th {
+    background: #343a40;
+    color: #ffffff;
+}
+
+table td {
+    background: #f9fafb;
+    color: #495057;
+}
+
+.add-complaint label {
+    display: block;
+    margin: 12px 0 8px;
+    font-weight: bold;
+    color: #495057;
+}
+
+textarea, input[type="file"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 18px;
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+    transition: border-color 0.3s ease;
+}
+
+textarea:focus, input[type="file"]:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(90deg, #ff512f, #dd2476);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: white;
+    color: #ff512f;
+    border: 1px solid #ff512f;
+    transform: scale(1.05);
+}
